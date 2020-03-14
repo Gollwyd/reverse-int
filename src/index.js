@@ -7,6 +7,6 @@ module.exports = function reverse (n) {
       newArr.unshift(element);
   });
   let newString = newArr.join('');
-  let newNum = +newString;
+  let newNum = Number(newString);
   return newNum;
 }
