@@ -3,10 +3,12 @@ module.exports = function reverse (n) {
   let strNum = num.toString();
   let arrNum = strNum.split('');
   let newArr = [];
-  arrNum.array.forEach(element => {
+  arrNum.forEach(element => {
       newArr.unshift(element);
   });
   let newString = newArr.join('');
   let newNum = Number(newString);
   return newNum;
 }
+
+
